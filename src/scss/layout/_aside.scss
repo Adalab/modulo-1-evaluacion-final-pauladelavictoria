@@ -15,6 +15,28 @@
     grid-column: 2/3;
     grid-row: 3;
   }
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 115px;
+    &-three {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    &-two {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    &-one {
+      grid-column: 3;
+      grid-row: 1;
+    }
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 115px;
+    gap: 25px;
+    justify-content: center;
+  }
 }
 
 .aside {
@@ -30,8 +52,10 @@
 .item__title {
   @include text();
   font-weight: 700;
+  @media (min-width: 768px) {
+    padding-bottom: 15px;
+  }
 }
-
 .item__text {
   @include text();
 }
@@ -41,4 +65,7 @@
   color: white;
   background-color: $orange;
   margin: 45px 60px;
+  @media (min-width: 768px) {
+    margin: 60px;
+  }
 }

@@ -1,40 +1,66 @@
 .footer {
-    background-color: $darkblue;
-    display: flex;
-    flex-direction: column;
+  background-color: $darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  &__list-category {
+    padding: 60px 15px 45px;
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  @media (min-width: 1200px){
     justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-   &__list-category {
-    padding: 60px 15px 45px;   
-    }    
+    gap: 30px;
+}
 }
 
-.footer__icon-arrow{
-    @include flexCentered();
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    transform: translate(0, -50%);
+.footer__icon-arrow {
+  @include flexCentered();
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(0, -50%);
 }
 
-.footer__div{
-    text-transform: lowercase;
-    font-size: 14px;
-    line-height: 30px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 30px;
-    margin-bottom: 45px;
+.footer__div {
+  text-transform: lowercase;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  @media (min-width: 768px) {
+    text-align: left;
+    margin-top: 0px;
+    width: 160px;
+  }
 }
 
 .footer__icon-heart {
-    color: $orange;
-    padding-right: 3px;
+  color: $orange;
+  padding-right: 3px;
+}
+
+@media (min-width: 768px) {
+  .footer__nav-rrss {
+    width: 160px;
+    order: 3;
+    text-align: left;
+  }
+  .footer__nav-category {
+    width: 160px;
+    order: 2;
+    text-align: left;
+  }
 }

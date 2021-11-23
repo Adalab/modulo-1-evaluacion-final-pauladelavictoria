@@ -1,5 +1,11 @@
 .main {
     padding: 30px 15px 45px;
+    @media (min-width: 768px){
+      padding: 30px 40px 60px;
+      @media (min-width: 1200px){
+        padding: 60px 275px 60px;
+      }
+    }
 }
 
 .article {
@@ -15,6 +21,9 @@
   }
   &__title {
     @include title();
+    @media (min-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__text {

@@ -19,12 +19,23 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
+    @media (min-width: 768px) {
+      font-size: 80px;
+      line-height: 105px;
+    }
+    @media (min-width: 1200px){
+      font-size: 100px;
+    }
   }
   &__text {
     font-size: 16px;
     font-weight: 400;
     color: white;
     text-align: center;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      margin-top: 20px;
+    }
   }
   &__icon-scroll {
     @include flexCentered();
