@@ -1,0 +1,24 @@
+.aside {
+  background-color: #eff9ff;
+  font-family: $mainfont;
+  text-align: center;
+  &__title {
+    @include title();
+  }
+}
+
+.item__title {
+  @include text();
+  font-weight: 700;
+}
+
+.item__text {
+  @include text();
+}
+
+.aside__button {
+    @include button();
+    color: white;
+    background-color: $orange;
+    margin-bottom: 50px;
+}
