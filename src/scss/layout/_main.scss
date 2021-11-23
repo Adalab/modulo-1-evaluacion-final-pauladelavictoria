@@ -1,0 +1,42 @@
+.main {
+    padding: 30px 15px 45px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  font-family: $mainfont;
+  
+  &__category {
+    font-size: 14px;
+    color: $liblue;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4a4a4a;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+      background-color: white;
+    width: 75px;
+    height: 45px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $orange;
+    border: $orange 2px solid;
+    border-radius: 22px;
+  }
+}

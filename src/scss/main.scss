@@ -1,0 +1,25 @@
+
+// @import 'components/code';
+// @import 'components/links';
+// @import 'layout/page'; 
+// @import 'layout/footer';
+// @import 'pages/index';
+
+
+
+// RESET
+@import "core/reset";
+
+// VARIABLES
+@import "core/variables";
+
+//MIXINS
+@import "core/mixins";
+
+// HEADER
+@import "layout/header";
+
+//MAIN 
+@import "layout/main";
+@import "layout/aside";
+
