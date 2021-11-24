@@ -38,5 +38,11 @@
     color: $orange;
     border: $orange 2px solid;
     background-color: white;
+    transition: background-color ease 1s, color ease 1s, border ease 1s;
+  &:hover {
+    background-color: $darkblue;
+    color: white;
+    border:$darkblue;
   }
+}
 }

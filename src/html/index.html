@@ -22,24 +22,24 @@
 
   <!-- MAIN WITH ASIDE-->
 
-  <include src="./partials/main.html" category="Insomnia tips" title="Looking through a window"
+  <include src="./partials/mainBlog.html" category="Insomnia tips" title="Looking through a window"
     text="Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.">
   </include>
 
 
-  <aside class="aside">
-    <h2 class="aside__title" id="asidetitle">3 Reasons to purchase</h2>
+  <div class="container__reasons">
+    <h2 class="container__reasons-title" id="asidetitle">3 Reasons to purchase</h2>
 
     <div class="container__grid">
-    <include class="container__grid-three" src="./partials/aside-item.html" title="Ut sed metus" text="Lorem ipsum dolor sit amet, consecteur.">
+    <include class="container__grid-three" src="./partials/mainReasons.html" title="Ut sed metus" text="Lorem ipsum dolor sit amet, consecteur.">
     </include>
-    <include class="container__grid-two" src="./partials/aside-item.html" title="Curabitur ac erat" text="Mauris mattis urna quis lorem molestie.">
+    <include class="container__grid-two" src="./partials/mainReasons.html" title="Curabitur ac erat" text="Mauris mattis urna quis lorem molestie.">
     </include>
-    <include class="container__grid-one" src="./partials/aside-item.html" title="Morbi dictum" text="Aliquam in dolor et dolor tincidunt.">
+    <include class="container__grid-one" src="./partials/mainReasons.html" title="Morbi dictum" text="Aliquam in dolor et dolor tincidunt.">
     </include>
   </div>
-    <button class="aside__button">More reasons</button>
-  </aside>
+    <button class="reasons__button">More reasons</button>
+</div>
 
   <!-- FOOTER -->
 <include src="./partials/footer.html"></include>

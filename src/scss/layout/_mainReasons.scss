@@ -39,11 +39,11 @@
   }
 }
 
-.aside {
+.container__reasons{
   background-color: #eff9ff;
   font-family: $mainfont;
   text-align: center;
-  &__title {
+  &-title {
     @include title();
     padding: 30px 15px 45px;
   }
@@ -60,11 +60,16 @@
   @include text();
 }
 
-.aside__button {
+.reasons__button {
   @include button();
   color: white;
   background-color: $orange;
   margin: 45px 60px;
+  transition: background-color ease 1s, color ease 1s;
+  &:hover {
+    background-color: white;
+    color: $darkblue;
+  }
   @media (min-width: 768px) {
     margin: 60px;
   }
