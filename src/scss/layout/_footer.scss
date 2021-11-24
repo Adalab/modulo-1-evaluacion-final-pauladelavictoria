@@ -18,10 +18,10 @@
     flex-direction: row;
     justify-content: space-around;
   }
-  @media (min-width: 1200px){
+  @media (min-width: 1200px) {
     justify-content: center;
     gap: 30px;
-}
+  }
 }
 
 .footer__icon-arrow {
@@ -31,49 +31,42 @@
   position: absolute;
   top: 0;
   transform: translate(0, -50%);
-  animation-name: size;
+  animation-name: rotate;
   animation-duration: 2s;
-  animation-iteration-count: 10;
-  @keyframes size {
+  animation-iteration-count: 5;
+  @keyframes rotate {
     0% {
-      width: 2px;
-      height: 2px;
+      transform: rotate(40deg) translate(0, -50%);
     }
-    10%{
-      width: 4px;
-      height: 4px;
+    10% {
+      transform: rotate(70deg) translate(0, -50%);
     }
-    20%{
-      width: 6px;
-      height: 6px;
+    20% {
+      transform: rotate(100deg) translate(0, -50%);
     }
-    30%{
-      width: 8px;
-      height: 8px;
+    30% {
+      transform: rotate(130deg) translate(0, -50%);
     }
-    40%{
-      width: 10px;
-      height: 10px;
+    40% {
+      transform: rotate(170deg) translate(0, -50%);
     }
-    50%{
-      width: 12px;
-      height: 12px;
+    50% {
+      transform: rotate(200deg) translate(0, -50%);
     }
-    60%{
-      width: 14px;
-      height: 14px;
+    60% {
+      transform: rotate(240deg) translate(0, -50%);
     }
-    70%{
-      width: 16px;
-      height: 16px;
+    70% {
+      transform: rotate(270deg) translate(0, -50%);
     }
-    80%{
-      width: 18px;
-      height: 18px;
+    80% {
+      transform: rotate(300deg) translate(0, -50%);
     }
-    90%{
-      width: 20px;
-      height: 20px;
+    90% {
+      transform: rotate(340deg) translate(0, -50%);
+    }
+    100% {
+      transform: rotate(360deg) translate(0, -50%);
     }
   }
 }
